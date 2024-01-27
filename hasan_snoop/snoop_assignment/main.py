@@ -85,8 +85,8 @@ def data_quality_checks(df):
     # Condition 2: Check for invalid transactionDate (not in YYYY-MM-DD format)
     condition2 = pd.to_datetime(df['transactionDate'], format='%Y-%m-%d', errors='coerce').notna()
 
-    # Condition 3: Check for duplicate transaction records (based on transactionId and customerId)
-    condition3 = df.groupby(['transactionId', 'customerId'])['transactionId'].transform('nunique') == 1
+    # Condition 3: Check for duplicate transaction IDs
+    condition3 = ~df['transactionId'].duplicated()
 
     # Combine the conditions using boolean operators 
     final_condition = condition1 & condition2 & condition3
