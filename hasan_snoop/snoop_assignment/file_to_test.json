@@ -1,0 +1,16 @@
+{
+    "transactions": [
+        {
+            "customerId": "fbbe0690-0cd1-48eb-aece-f2744db6f895",
+            "customerName": "Gregory Downs",
+            "transactionId": "7b3c8eee-3689-4cf8-b874-dfbe515d2eb8",
+            "transactionDate": "2022-02-21",
+            "sourceDate": "2024-01-22T21:20:48",
+            "merchantId": 36,
+            "categoryId": 10,
+            "currency": "GBP",
+            "amount": "5000",
+            "description": "Blair-White | Travel"
+        }
+    ]
+}
